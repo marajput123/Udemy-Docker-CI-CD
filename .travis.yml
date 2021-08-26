@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t mrajput99/Udemy-Docker-CI-CD -f Dockerfile.dev .
+  - docker build -t mrajput99/udemy-docker-ci-cd -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true mrajput99/udemy-docker-ci-cd npm run test
